@@ -18,9 +18,9 @@ if "messages" not in st.session_state:
 
 # Sample PDF sources
 SAMPLE_PDFS = {
-    "Case 1 Sample": "E:/GitHub/Rag_System/Files/Case 1.pdf",
-    "Case 2 Sample": "E:/GitHub/Rag_System/Files/Case 2.pdf",
-    "Case 3 Sample": "E:/GitHub/Rag_System/Files/Case 3.pdf"
+    "Case 1 Sample": "Files/Case 1.pdf",
+    "Case 2 Sample": "Files/Case 2.pdf",
+    "Case 3 Sample": "Files/Case 3.pdf"
 }
 
 
