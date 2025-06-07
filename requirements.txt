@@ -1,0 +1,13 @@
+# Requirements for the project
+# Install with: pip install -r requirements.txt
+
+fastapi
+uvicorn[standard]
+qdrant-client
+pymupdf
+langchain-cohere
+langchain
+langchain-qdrant
+groq
+python-multipart
+streamlit 
