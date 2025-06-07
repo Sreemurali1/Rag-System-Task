@@ -15,6 +15,7 @@ if "messages" not in st.session_state:
         "Hello! I am your Legal Document Assistant. Please upload one or more PDF files using the sidebar to begin."
     ))
 
+FASTAPI_URL = "https://rag-system-task.onrender.com"
 
 # Sample PDF sources
 SAMPLE_PDFS = {
@@ -56,7 +57,8 @@ with st.sidebar:
                     st.error(f"File not found: {sample_path}")
 
 
-            response = requests.post("http://localhost:8000/upload/", files=files)
+            response = requests.post(f"{FASTAPI_URL}/upload/", files=files)
+            
             if response.status_code == 200:
                 st.success("Documents uploaded and processed successfully.")
                 st.markdown("#### Uploaded Files:")
@@ -80,7 +82,7 @@ query = st.chat_input("Enter your legal question")
 if query:
     st.session_state.messages.append(("User", query))
 
-    response = requests.post("http://localhost:8000/ask/", data={"query": query})
+    response = requests.post(f"{FASTAPI_URL}/ask/", data={"query": query})
 
     if response.status_code == 200:
         answer = response.json()["answer"]
