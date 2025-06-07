@@ -15,7 +15,7 @@ API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 # Helper for retries
 def post_with_retry(url, **kwargs):
-    for i in range(10):
+    for i in range(3):
         try:
             response = requests.post(url, **kwargs)
             return response
