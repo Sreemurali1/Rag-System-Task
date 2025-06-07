@@ -10,4 +10,5 @@ langchain
 langchain-qdrant
 groq
 python-multipart
-streamlit 
+streamlit
+supervisor 
