@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 import os
 from groq import Groq
-from vectore_store import vector_store  # fixed typo
+from vectore_store import vector_store 
 from pdf_parser import get_pdf_text, get_text_chunks
 from langchain_qdrant import QdrantVectorStore
 from langchain_cohere import CohereEmbeddings
