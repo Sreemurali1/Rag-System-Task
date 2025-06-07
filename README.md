@@ -21,6 +21,7 @@ This project is a full-stack Retrieval-Augmented Generation (RAG) system using:
 -  Embeddings: Cohere
 -  Backend: FastAPI
 -  PDF Parsing: PyMuPDF
+-  Docker
 
 ## ⚙️ How to Run
 
